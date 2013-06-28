@@ -1,0 +1,72 @@
+/*
+  Ryan Cantone
+  Project 4
+  VFW 1306
+  6-27-13
+*/
+
+html{
+    background-image: url(img/bg.png);
+    max-width: 333px;
+}
+
+body{
+    font-family: Cambria, Constatia, "Times New Roman", Times, serif;
+    text-transform: capitalize;
+    letter-spacing: 0.025em;
+}
+
+h1{
+    border: 3px dashed #ADD8E6;
+    padding: 10px 15px;
+    background-color: #666;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bolder;
+    color: #FFA500;
+    text-align: center;
+    word-spacing: 3px;
+}
+
+fieldset{
+    margin: 10px 5px;
+    border: 1px solid #ADD8E6;
+    padding: 10px 15px;
+    background-color: #666;
+    background-color: rgba(0,0,0,0.5);
+    color: #FFA500;
+    line-height: 1.6em;
+}
+
+div{
+    margin: 10px 5px;
+    border: 1px solid #ADD8E6;
+    padding: 10px 15px;
+    background-color: #666;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    line-height: 1.6em;
+}
+
+legend{
+    color:white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+span{
+    display: block;
+}
+
+nav{
+    text-align: center;
+}
+
+a{
+    margin: 5px 1px;
+    padding: 5px 2px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+a:hover{color: #ADD8E6; outline: 1px dashed white; background-color: #666; background-color: rgba(0,0,0,0.5);}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<!--
+  Ryan Cantone
+  Project 4
+  VFW 1306
+  6-27-13
+-->
+
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta description= "This is an app for adding weapons." />
+        <meta keywords="weapons, government,armory"
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="user-scalable=no, width=device-width" />
+        <meta name="viewport" content="target-densitydpi=device-dpi" />
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320" />
+        <title>My App's Add Weapon Page.</title>
+        <link rel="stylesheet" href="additemstyle.css" type="text/css" />
+    </head>
+    <body>
+        <h1>The Armory</h1>
+        <nav>
+            <a href = "#" id = "clearData">Clear Armory</a>
+            <a href = "#" id = "displayData">Show Weapons</a>
+            <a href = "additem.html" id = "addNew" style = "display: none;" >Add New Weapon</a>
+        </nav>
+        <form action="#" method="post" id = "weaponForm">
+            <fieldset>
+                <legend>Weapon Details</legend>
+                <p>* Fields are required.</p>
+                <span><ul id="errors"></ul></span>
+                <ul id="fields">
+                    <li>
+                        <label for="wn">*Weapon Name:</label><input type="text" id="wn"/>
+                    </li>
+                    <li id="select"><label for="weapon">*Weapon Category:</label><br /></li>
+                    <li><!--*-->Is it deadly?:
+                        <ul>
+                            <li><input type="radio" value="Yes" id="yes"  name="deadly" /><label for="yes">Yes</label></li>
+                            <li><input type="radio" value="No" id="no"  name="deadly" /><label for="no">No</label></li>
+                            <li><input type="radio" value="Unknown" id="unknown"  name="deadly" /><label for="unknown">Unknown</label></li>
+                        </ul>
+                    </li>
+                    <li>Do you like this weapon?</li>
+                    <li><input type="checkbox" id="fav" value="Yes" class = "checkbox" /><label for="fav">Yes</label></li>
+                    <li>
+
+                        <label for="weapon">Difficulty?</label>
+                        <input type="range" min="0" max="10" value = "0" onchange = "showNumber(this.value)" /> <span id="weapon">0</span>
+                        <script type="text/javascript">
+                            function showNumber(newNumber){
+                                document.getElementById("weapon").innerHTML = newNumber;
+                            }
+                        </script>
+                    </li>
+                    <li>
+                        <label for="comments">Any other details?:</label></br><textarea id="comments"></textarea>
+                    </li>
+
+                </ul>
+            </fieldset>
+            <input type = "submit" value = "Register Weapon" id = "saveData"/>
+
+        </form>
+    <script type="text/javascript" src="JSON.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
